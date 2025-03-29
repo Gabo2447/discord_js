@@ -4,7 +4,7 @@ Este proyecto es para ayudar a las personas que quieren tener un bot de discord 
 
 # 🚦 Que tiene el bot?
 
-<h2>Handlers y Funcionalidades</h2>
+Handlers y Funcionalidades
 
 ### 📑 [CommandHandler](https://github.com/Gabo2447/discord_js/tree/main/handlers/commandHandler.js)
 CommandHandler organizado y con su propia sección
