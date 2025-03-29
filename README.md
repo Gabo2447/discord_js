@@ -4,23 +4,19 @@ Este proyecto es para ayudar a las personas que quieren tener un bot de discord 
 
 # 🚦 Que tiene el bot?
 
-<Cards columns={4}>
-  <Card title="CommandHandler" href="https://github.com/Gabo2447/discord_js/tree/main/handlers/commandHandler.js" icon="fa-home" target="_blank">
-    CommandHandler organizado y con su propia seccion.
-  </Card>
+<h2>Handlers y Funcionalidades</h2>
 
-  <Card title="PrefixHandler" href="https://github.com/Gabo2447/discord_js/tree/main/handlers/prefixHandler.js" icon="fa-user">
-    PrefixHandler organizado y separado del CommandHandler.
-  </Card>
+### 📑 [CommandHandler](https://github.com/Gabo2447/discord_js/tree/main/handlers/commandHandler.js)
+CommandHandler organizado y con su propia sección
+  
+### 📄[PrefixHandler](https://github.com/Gabo2447/discord_js/tree/main/handlers/prefixHandler.js)
+PrefixHandler organizado y separado del CommandHandler.
 
-  <Card title="Registrador de comandos" href="https://github.com/Gabo2447/discord_js/tree/main/index.js" icon="fa-star">
-    Index organizado, facil de leer y solamente con cosas necesarias.
-  </Card>
+### 📑[Registrador de comandos](https://github.com/Gabo2447/discord_js/tree/main/index.js")
+Index organizado, fácil de leer y solamente con cosas necesarias.
 
-  <Card title="Proximamente mas funciones" icon="fa-home">
-    Trabajando en optimizar, mejorar el bot
-  </Card>
-</Cards>
+### ⁉️ Próximamente más funciones
+Trabajando en optimizar y mejorar el bot.
 
 # 📝 **Customizar el bot**
 
