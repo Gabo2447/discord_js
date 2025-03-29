@@ -1,4 +1,4 @@
-# Bienvenido a Cat Orange! :owlbert:
+# Bienvenido a Cat Orange! 🐈
 
 Este proyecto es para ayudar a las personas que quieren tener un bot de discord con el codigo ya hecho con funciones en casi todas las areas!
 
@@ -18,18 +18,17 @@ Este proyecto es para ayudar a las personas que quieren tener un bot de discord 
   </Card>
 
   <Card title="Proximamente mas funciones" icon="fa-home">
-    Trabajando en **optimizar, mejorar** el bot
+    Trabajando en optimizar, mejorar el bot
   </Card>
 </Cards>
 
 # 📝 **Customizar el bot**
 
-Si quieres agregar mas comandos o funcionalidades basate de las siguientes plantillas para **comandos prefijos** y **comandos slash**:
+Si quieres agregar mas comandos o funcionalidades basate de las siguientes plantillas para [**comandos prefijos**](https://github.com/Gabo2447/discord_js/edit/main/README.md#-slashcommands) y [**comandos slash**](https://github.com/Gabo2447/discord_js/edit/main/README.md#-prefixcommands):
+>  [!IMPORTANT]
+> Cuidado con los comandos slash y los comandos prefijos, no utilizan la misma manera para enviar mensajes.
 
-> > 📘 IMPORTANTE
-> >
-> > Cuidado con los comandos slash y los comandos prefijos, no utilizan la misma manera para enviar mensajes.
-
+## 📑 SLASHCOMMANDS
 ```javascript Slash Command
 // Comandos slash
 const { SlashCommandBuilder } = require('discord.js');
@@ -44,7 +43,7 @@ module.exports = {
   }
 };
 ```
-
+## 📄 PREFIXCOMMANDS
 ```javascript Prefix Command
 // Comandos Prefix
 module.exports = {
