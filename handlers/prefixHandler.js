@@ -19,7 +19,6 @@ module.exports = async (client) => {
     // Verificar propiedades necesarias del comando
     if ("name" in command && "execute" in command) {
       client.prefixCommands.set(command.name, command);
-      console.log(`[Prefix Handler] ✅ Comando cargado: ${command.name}`);
       console.log(`[Prefix Handler] 📂 Ruta: ${file}`);
     } else {
       console.log(`[Prefix Handler] ❌ Error en ${file}:`);

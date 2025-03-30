@@ -3,6 +3,7 @@ const { token, clientId, prefix } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 const { REST, Routes } = require('discord.js');
+const { db } = require('./database/db');
 
 // Creando el cliente con los intents necesarios
 const client = new Client({ 
@@ -20,8 +21,6 @@ require('./handlers/prefixHandler')(client);
 
 // Evento para mensajes
 client.on('messageCreate', (message) => {
-    console.log(`Mensaje recibido: ${message.content}`); // Debug
-
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -79,6 +78,16 @@ client.once(Events.ClientReady, async readyClient => {
 client.on('error', error => {
     console.error('[Client] Error en el cliente:', error);
 });
+
+// Inicializar el bot y la base de datos
+(async () => {
+    try {
+        await initDatabase();
+        // Aquí va el resto de tu código para iniciar el bot
+    } catch (error) {
+        console.error('Error al inicializar la base de datos:', error);
+    }
+})();
 
 // Iniciar sesión
 client.login(token);

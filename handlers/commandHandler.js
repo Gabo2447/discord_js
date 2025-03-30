@@ -16,9 +16,7 @@ module.exports = async (client) => {
     
     if ("data" in command && "execute" in command) {
       client.commands.set(command.data.name, command);
-      console.log(`[Command Handler] ✅ Comando cargado: ${command.data.name}`);
-      console.log(`[Command Handler] 📂 Ruta: ${file}`);
-    } else {
+      console.log(`[Command Handler] ✅ Comando cargado: ${command.data.name}`);    } else {
       console.log(`[Command Handler] ❌ Error en ${file}:`);
       console.log(`   - data: ${"data" in command ? "✅" : "❌"}`);
       console.log(`   - execute: ${"execute" in command ? "✅" : "❌"}`);
